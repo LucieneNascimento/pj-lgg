@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>LOGIN</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list inset>
+    <ion-item>
+      <ion-label floating>E-Mail:</ion-label>
+      <ion-input type="text" #usuario></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>Senha:</ion-label>
+      <ion-input type="password" #senha></ion-input>
+    </ion-item>
+  </ion-list>
+    <button ion-button color="dark" (click)="logar()">ENTRAR</button>
+    <button ion-button color="dark" outline (click)="novoUsuario()">Cadastrar-se</button>
+  
+</ion-content>

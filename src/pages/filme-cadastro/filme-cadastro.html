@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>filmeCadastro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="formGroup" (ngSubmit)="cadF()">
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Nome</ion-label>
+        <ion-input formControlName="nome" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Matrícula</ion-label>
+        <ion-input formControlName="matricula" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Cargo</ion-label>
+        <ion-input formControlName="cargo" type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Salário</ion-label>
+        <ion-input formControlName="salario" type="number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <button ion-button full>Cadastrar</button>
+      </ion-item>
+    </ion-list>
+  </form>
+
+</ion-content>
